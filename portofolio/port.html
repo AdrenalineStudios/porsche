@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portofolio - PortoUI</title>
+        <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+        <!-- ===== CSS FILES ===== -->
+        <link rel="stylesheet" href="css/porto.css">
+        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- ===== Main onvangercon begin ===== -->
+        <div class="main-container">
+            <!-- ===== Aside Start ===== -->
+            <div class="aside">
+                <div class="logo">
+                    <a href="index.html"><span>H</span>adi.Corp</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+
+                <div class="book">
+                    <table>
+                        <tr>
+                            <td class="card-description">
+                                Perfect if you wanted to get some help, Contact Me!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="book-list">
+                                    <li><span class="checkmark">✔</span> 10 Launch Weeks</li>
+                                    <li><span class="checkmark">✔</span> 10 Influencers Post</li>
+                                    <li><span class="checkmark">✔</span> 100,000 Views</li>
+                                    <li><span class="checkmark">✔</span> 10 Reddit Posts</li>
+                                    <li><span class="checkmark">✔</span> 10 Reviews</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <ul class="nav">
+                    <li><a href="index.html" class="active"><i class="fa fa-home"></i>  Main Menu</a></li>
+                    <li><a href="/about.html"><i class="fa fa-user"></i>  About</a></li>
+                    <li><a href="/about.html#service"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="/port.html#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="/contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+
+
+                <div class="dots">
+                    <span class="Blue">X</span>
+                    <span class="Purple">-</span>
+                    <span class="Pink">+</span>
+                </div>
+
+                <div class="clock">
+                    <nav>
+                        <div class="time-group">
+                            <h3 class="zwart" id="hours">10</h3>
+                            <h3 class="name hours">Hours</h3>
+                        </div>
+                        
+                        <div class="time-group">
+                            <h3 class="red" id="minutes">30</h3>
+                            <h3 class="name minutes">Min</h3>
+                        </div>
+                        
+                        <div class="time-group">
+                            <h3 class="groen" id="seconds">60</h3>
+                            <h3 class="name seconds">Seconds</h3>
+                        </div>
+                    </nav>
+
+
+                    
+                    
+                </div>
+            </div>
+            <!-- ===== Aside end ===== -->
+
+
+            <!-- Navigation Table -->
+            <div class="table-menu">
+                <table>
+                    <tr>
+                        <td><a href="/port.html#home" class="fa fa-home"></a></td>
+                        <td><a href="/about.html" class="fa fa-code"></a></td>
+                        <td><a href="/about.html#service" class="fa fa-list"></a></td>
+                        <td><a href="/contact.html" class="fa fa-comments"></a></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- END -->
+            
+            
+            <!-- script voor clock -->
+            <script>
+                function clock() {
+                    var today = new Date();
+                    var hours = today.getHours();
+                    var minutes = today.getMinutes();
+                    var seconds = today.getSeconds();
+                    // let period = "AM";
+            
+                    // Update the text content using ids
+                    document.querySelector("#hours").innerHTML = hours;
+                    document.querySelector("#minutes").innerHTML = minutes;
+                    // If you want to add seconds, you'll need an element for that
+                    document.querySelector("#seconds").innerHTML = seconds; // Uncomment if you add an element for seconds
+                    // document.querySelector("#period").innerHTML = period;  // Uncomment if you add AM/PM element
+                }
+            
+                // Call the clock function every 1000 milliseconds (1 second)
+                var updateClock = setInterval(clock, 1000);
+            </script>
+            
+
+            <!-- ===== Main Content Start ===== -->
+            <div class="main-content">
+                <!-- ===== Home Section Start ===== -->
+                <section class="home section" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <h3 class="hello">Hello, My name is <span class="name">Hadi ALi</span></h3>
+                                <h3 class="my-profession">im a <span class="typing" id="typing">Web designer</span></h3>
+                                <p>Ik ben Ali Hadi Ghaznawi, een full end programmer met al 4 jaar experience onder coderen. Ik heb rond de 7 talen al geadvanceerd..</p>
+                                <a href="#contact" class="btn hire-me">More About Me</a>
+                            </div>
+                            <div class="home-img padd-15">
+                                <img src="images/hero.jpg" alt="image of me">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Home Section End ===== -->
+                
+                <!-- ===== portofolio Section START ===== -->
+                <section class="portfolio section" id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2 >Portofolio</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="portofolio-heading padd-15 red">
+                                <h2>My Last Projects :</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ===== Portfolio item star ===== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio-1.png" alt="fotos">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item ends ===== -->
+                            <!-- ===== Portfolio item star ===== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio-2.png" alt="fotos">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item ends ===== -->
+                            <!-- ===== Portfolio item star ===== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio-3.png" alt="fotos">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item ends ===== -->
+                            <!-- ===== Portfolio item star ===== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio-4.png" alt="fotos">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item ends ===== -->
+                            <!-- ===== Portfolio item star ===== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio-5.png" alt="fotos">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item ends ===== -->
+                            <!-- ===== Portfolio item star ===== -->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio-6.png" alt="fotos">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item ends ===== -->
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== portofolio Section END ===== -->
+            </div>
+            <!-- ===== Main Content end ===== -->
+        </div>
+
+        <!-- ===== Main onvangercon ein ===== -->
+        <!-- =====JS Files ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

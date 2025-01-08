@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact - PortoUi</title>
+        <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+        <!-- ===== CSS FILES ===== -->
+        <link rel="stylesheet" href="css/porto.css">
+        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- ===== Main onvangercon begin ===== -->
+        <div class="main-container">
+            <!-- ===== Aside Start ===== -->
+            <div class="aside">
+                <div class="logo">
+                    <a href="index.html"><span>H</span>adi.Corp</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+
+
+
+                <div class="book">
+                    <table>
+                        <tr>
+                            <td class="card-description">
+                                Perfect if you wanted to get some help, Contact Me!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="book-list">
+                                    <li><span class="checkmark">✔</span> 10 Launch Weeks</li>
+                                    <li><span class="checkmark">✔</span> 10 Influencers Post</li>
+                                    <li><span class="checkmark">✔</span> 100,000 Views</li>
+                                    <li><span class="checkmark">✔</span> 10 Reddit Posts</li>
+                                    <li><span class="checkmark">✔</span> 10 Reviews</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+
+
+
+                <ul class="nav">
+                    <li><a href="index.html" class="active"><i class="fa fa-home"></i>  Main Menu</a></li>
+                    <li><a href="/about.html"><i class="fa fa-user"></i>  About</a></li>
+                    <li><a href="/about.html#service"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="/port.html#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="/contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+
+
+                <div class="dots">
+                    <span class="Blue">X</span>
+                    <span class="Purple">-</span>
+                    <span class="Pink">+</span>
+                </div>
+
+                <div class="clock">
+                    <nav>
+                        <div class="time-group">
+                            <h3 class="zwart" id="hours">10</h3>
+                            <h3 class="name hours">Hours</h3>
+                        </div>
+                        
+                        <div class="time-group">
+                            <h3 class="red" id="minutes">30</h3>
+                            <h3 class="name minutes">Min</h3>
+                        </div>
+                        
+                        <div class="time-group">
+                            <h3 class="groen" id="seconds">60</h3>
+                            <h3 class="name seconds">Seconds</h3>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- ===== Aside end ===== -->
+
+
+            <!-- Navigation Table -->
+            <div class="table-menu">
+                <table>
+                    <tr>
+                        <td><a href="/port.html#home" class="fa fa-home"></a></td>
+                        <td><a href="/about.html" class="fa fa-code"></a></td>
+                        <td><a href="/about.html#service" class="fa fa-list"></a></td>
+                        <td><a href="/contact.html" class="fa fa-comments"></a></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- END -->
+            
+            
+            <!-- script voor clock -->
+            <script>
+                function clock() {
+                    var today = new Date();
+                    var hours = today.getHours();
+                    var minutes = today.getMinutes();
+                    var seconds = today.getSeconds();
+                    // let period = "AM";
+            
+                    // Update the text content using ids
+                    document.querySelector("#hours").innerHTML = hours;
+                    document.querySelector("#minutes").innerHTML = minutes;
+                    // If you want to add seconds, you'll need an element for that
+                    document.querySelector("#seconds").innerHTML = seconds; // Uncomment if you add an element for seconds
+                    // document.querySelector("#period").innerHTML = period;  // Uncomment if you add AM/PM element
+                }
+            
+                // Call the clock function every 1000 milliseconds (1 second)
+                var updateClock = setInterval(clock, 1000);
+            </script>
+            
+                <!-- ===== contact Section start ===== -->
+                <section class="contact section" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Contact Me</h2>
+                            </div>
+                        </div>
+                        <h3 class="contact-title padd-15">Do You Have Any Questions ?</h3>
+                        <h4 class="contact-sub-title padd-15">I' m at your service</h4>
+                        <div class="row">
+                            <!-- ===== Contact info item begin ===== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <h4>Call Us On</h4>
+                                <p>0683389805</p>
+                            </div>
+                            <!-- ===== Contact info item end ===== -->
+                            <!-- ===== Contact info item begin ===== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                                <h4>office</h4>
+                                <p>ISlAMABAD</p>
+                            </div>
+                            <!-- ===== Contact info item end ===== -->
+                            <!-- ===== Contact info item begin ===== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>info@islamabad@gmai.com</p>
+                            </div>
+                            <!-- ===== Contact info item end ===== -->
+                            <!-- ===== Contact info item begin ===== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                                <h4>WEBSITE</h4>
+                                <p>www.www.com</p>
+                            </div>
+                            <!-- ===== Contact info item end ===== -->
+                        </div>
+                        <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                        <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSSAGES</h4>
+                        <!-- ====== contact form ====== -->
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- ===== New Browser Select Input ===== -->
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <label for="browser" class="red">Choose your browser from the list:</label>
+                                            <input list="browsers" name="browser" id="browser" class="form-control">
+                                                <datalist id="browsers">
+                                                <option value="Edge">
+                                                <option value="Firefox">
+                                                <option value="Chrome">
+                                                <option value="Opera">
+                                                <option value="Safari">
+                                            </datalist>
+                                        </div>
+                                    </div>
+
+                                    <!-- ====== hieronder een beetje zelfde ondersteuning. dit is voor keuze werkt niet! ====== -->
+                                    <!-- ===== Contact Form - Radio Buttons and Checkboxes ===== -->
+                                    <div class="contact .contact-form padd-15">
+                                        <div class="row">
+                                            <!-- ===== Radio Buttons ===== -->
+                                            <div class="form-item col-12 padd-15">
+                                                <div class="form-group">
+                                                    <label for="subscribe-yes" class="red" id="subscribe">Do you want to receive updates?</label>
+                                                    <div class="radio-buttons">
+                                                        <label class="radio-option">
+                                                            <input type="radio" name="subscribe" id="subscribe-yes" value="yes">
+                                                            <span class="radio-label">Yes</span>
+                                                        </label>
+                                                        <label class="radio-option">
+                                                            <input type="radio" name="subscribe" id="subscribe-no" value="no">
+                                                            <span class="radio-label">No</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- ===== Checkboxes ===== -->
+                                            <div class="form-item col-12 padd-15">
+                                                <div class="form-group">
+                                                    <label for="web-design" class="red">Select the services you're interested in:</label>
+                                                    <div class="checkboxes">
+                                                        <label class="checkbox-option">
+                                                            <input type="checkbox" name="services" id="web-design" value="web-design">
+                                                            <span class="checkbox-label">Web Design</span>
+                                                        </label>
+                                                        <label class="checkbox-option">
+                                                            <input type="checkbox" name="services" id="seo" value="seo">
+                                                            <span class="checkbox-label">SEO</span>
+                                                        </label>
+                                                        <label class="checkbox-option">
+                                                            <input type="checkbox" name="services" id="service" value="digital-marketing">
+                                                            <span class="checkbox-label">Digital Marketing</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- submit type button -->
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn" id="submitButton">Send Message</button>
+                                        <div id="sentMessage" class="sent-message">Sent!</div>
+                                    </div>
+
+                                    <script>
+                                        document.getElementById("submitButton").addEventListener("click", function(event) {
+                                            event.preventDefault(); // Prevent form submission for demonstration
+
+                                            // Show the "Sent!" message
+                                            const sentMessage = document.getElementById("sentMessage");
+                                            sentMessage.style.display = "block";
+                                            sentMessage.style.opacity = "1";
+
+                                            // After 3 seconds, fade out the message
+                                            setTimeout(function() {
+                                                sentMessage.style.opacity = "0";
+                                                setTimeout(function() {
+                                                    sentMessage.style.display = "none";
+                                                }, 1000); // Hide after the fade-out effect
+                                            }, 3000);
+                                        });
+                                    </script>
+                                    <!-- om het te laten werken gaan we een actie via js maken. hierdoor gaat hij checken of er is gekliked -->
+                                    <!-- als het gekliked is dan is opacity 1 anders null. en laat hij de text zien. ook is er 3000ms pauze -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== contact Section end ===== -->
+        </div>
+        <!-- ===== Main onvangercon ein ===== -->
+        <!-- =====JS Files ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
